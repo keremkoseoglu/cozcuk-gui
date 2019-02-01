@@ -11,12 +11,13 @@ import React, {Component} from 'react';
 import {createMaterialTopTabNavigator} from 'react-navigation';
 import Ayarlar from './Ayarlar';
 import Forgot from './Forgot';
+import NewUser from './NewUser';
 
 const MyNavigator = createMaterialTopTabNavigator(
     {
         "Ayarlar": Ayarlar,
         "Yeni Şifre": Forgot,
-        "Yeni Hesap": Forgot
+        "Yeni Hesap": NewUser
     },
     {
         navigationOptions: ({navigation, screenProps}) => ({

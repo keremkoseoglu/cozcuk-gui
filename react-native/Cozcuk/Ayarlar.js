@@ -16,6 +16,16 @@ export default class Ayarlar extends Component {
             password: ''
         };
 
+        this.load_values();
+
+    }
+
+    componentDidMount(): void {
+        this.load_values();
+        this.props.navigation.addListener('willFocus', this.load_values)
+    }
+
+    load_values = () => {
         AsyncStorage.getItem('url', (err, result) => {
                 if (result === null) {
                     this.setState({url: DEFAULT_URL});
@@ -31,7 +41,6 @@ export default class Ayarlar extends Component {
         AsyncStorage.getItem('password', (err, result) => {
             this.setState({password: result})
         });
-
     }
 
     onPressSave = () => {
