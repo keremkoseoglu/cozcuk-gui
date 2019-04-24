@@ -8,6 +8,7 @@
 
 import UIKit
 import EasyHTTP
+import EasyGUI
 
 class ForgotPassword: UIViewController, HttpClient {
 	
@@ -18,7 +19,7 @@ class ForgotPassword: UIViewController, HttpClient {
 	func handle_http_error(error: Error) {
 		DispatchQueue.main.async {
 			self.view.isUserInteractionEnabled = true
-			Gui.show_error_popup(error: error, parent: self)
+			Gui.showErrorPopup(error: error, parent: self)
 		}
 	}
 	

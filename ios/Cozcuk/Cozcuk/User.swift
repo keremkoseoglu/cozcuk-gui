@@ -8,6 +8,7 @@
 
 import UIKit
 import EasyHTTP
+import EasyGUI
 
 class User: UIViewController, HttpClient {
 
@@ -65,7 +66,7 @@ class User: UIViewController, HttpClient {
 	func handle_http_error(error: Error) {
 		DispatchQueue.main.async {
 			self.view.isUserInteractionEnabled = true
-			Gui.show_error_popup(error: error, parent: self)
+			Gui.showErrorPopup(error: error, parent: self)
 		}
 	}
 	
@@ -88,7 +89,7 @@ class User: UIViewController, HttpClient {
 			form_is_valid = false
 		}
 		
-		if txtEmail.text != "" && Gui.is_email_valid(email: txtEmail.text ?? "") {
+		if txtEmail.text != "" && Gui.isEmailValid(email: txtEmail.text ?? "") {
 			txtEmailStatus.text = User.STATUS_OK
 		}
 		else {

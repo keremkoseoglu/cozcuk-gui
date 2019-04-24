@@ -11,6 +11,8 @@
 		0C80F2922270422200EB6A8E /* EasyHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2912270422200EB6A8E /* EasyHTTP.framework */; };
 		0C80F2932270422200EB6A8E /* EasyHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2912270422200EB6A8E /* EasyHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C80F2962270438E00EB6A8E /* CozcukHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C80F2952270438E00EB6A8E /* CozcukHTTP.swift */; };
+		0C80F3242270898900EB6A8E /* EasyGUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F3232270898900EB6A8E /* EasyGUI.framework */; };
+		0C80F3252270898900EB6A8E /* EasyGUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F3232270898900EB6A8E /* EasyGUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C820FCD21EA88AC000E8034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C820FCC21EA88AC000E8034 /* AppDelegate.swift */; };
 		0C820FCF21EA88AC000E8034 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C820FCE21EA88AC000E8034 /* FirstViewController.swift */; };
 		0C820FD121EA88AC000E8034 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C820FD021EA88AC000E8034 /* SecondViewController.swift */; };
@@ -18,7 +20,6 @@
 		0C820FD621EA88AE000E8034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C820FD521EA88AE000E8034 /* Assets.xcassets */; };
 		0C820FD921EA88AE000E8034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C820FD721EA88AE000E8034 /* LaunchScreen.storyboard */; };
 		0CBC930F21F8369200B7118E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC930E21F8369200B7118E /* User.swift */; };
-		0CCE499621F8497900F8804E /* Gui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE499521F8497900F8804E /* Gui.swift */; };
 		0CDFD57F21F03DFB00AAC38D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD57E21F03DFB00AAC38D /* Configuration.swift */; };
 		0CF20B4721F78ACA00548E4A /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20B4621F78ACA00548E4A /* ForgotPassword.swift */; };
 		0CFCD40621F9E27D0070D9A9 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CFCD40521F9E27D0070D9A9 /* readme.md */; };
@@ -32,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0C80F3252270898900EB6A8E /* EasyGUI.framework in Embed Frameworks */,
 				0C80F2932270422200EB6A8E /* EasyHTTP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -43,6 +45,7 @@
 		0C43DA5B21F8565F00E31B44 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0C80F2912270422200EB6A8E /* EasyHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C80F2952270438E00EB6A8E /* CozcukHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CozcukHTTP.swift; sourceTree = "<group>"; };
+		0C80F3232270898900EB6A8E /* EasyGUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyGUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C820FC921EA88AC000E8034 /* Cozcuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cozcuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C820FCC21EA88AC000E8034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C820FCE21EA88AC000E8034 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		0C820FD821EA88AE000E8034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C820FDA21EA88AE000E8034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CBC930E21F8369200B7118E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0CCE499521F8497900F8804E /* Gui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gui.swift; sourceTree = "<group>"; };
 		0CDFD57E21F03DFB00AAC38D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		0CF20B4621F78ACA00548E4A /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		0CFCD40521F9E27D0070D9A9 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			files = (
 				0C80F2922270422200EB6A8E /* EasyHTTP.framework in Frameworks */,
 				56354C8323DF04FFD20D55C2 /* Pods_Cozcuk.framework in Frameworks */,
+				0C80F3242270898900EB6A8E /* EasyGUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		0C820FC021EA88AC000E8034 = {
 			isa = PBXGroup;
 			children = (
+				0C80F3232270898900EB6A8E /* EasyGUI.framework */,
 				0C80F2912270422200EB6A8E /* EasyHTTP.framework */,
 				0CFCD40521F9E27D0070D9A9 /* readme.md */,
 				0C43DA5B21F8565F00E31B44 /* Podfile */,
@@ -108,7 +112,6 @@
 				0C820FDA21EA88AE000E8034 /* Info.plist */,
 				0CDFD57E21F03DFB00AAC38D /* Configuration.swift */,
 				0CBC930E21F8369200B7118E /* User.swift */,
-				0CCE499521F8497900F8804E /* Gui.swift */,
 				0C80F2952270438E00EB6A8E /* CozcukHTTP.swift */,
 			);
 			path = Cozcuk;
@@ -267,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C820FD121EA88AC000E8034 /* SecondViewController.swift in Sources */,
-				0CCE499621F8497900F8804E /* Gui.swift in Sources */,
 				0C80F2962270438E00EB6A8E /* CozcukHTTP.swift in Sources */,
 				0C820FCD21EA88AC000E8034 /* AppDelegate.swift in Sources */,
 				0CDFD57F21F03DFB00AAC38D /* Configuration.swift in Sources */,
