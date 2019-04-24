@@ -9,6 +9,7 @@
 import UIKit
 import FacebookCore
 import FacebookLogin
+import EasyHTTP
 
 class SecondViewController: UIViewController, LoginButtonDelegate, HttpClient {
 

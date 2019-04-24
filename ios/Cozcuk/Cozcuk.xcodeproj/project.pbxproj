@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C0D338D21F7257000C44FDD /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D338C21F7257000C44FDD /* Http.swift */; };
 		0C43DA5C21F8565F00E31B44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0C43DA5B21F8565F00E31B44 /* Podfile */; };
+		0C80F2922270422200EB6A8E /* EasyHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2912270422200EB6A8E /* EasyHTTP.framework */; };
+		0C80F2932270422200EB6A8E /* EasyHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C80F2912270422200EB6A8E /* EasyHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C80F2962270438E00EB6A8E /* CozcukHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C80F2952270438E00EB6A8E /* CozcukHTTP.swift */; };
 		0C820FCD21EA88AC000E8034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C820FCC21EA88AC000E8034 /* AppDelegate.swift */; };
 		0C820FCF21EA88AC000E8034 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C820FCE21EA88AC000E8034 /* FirstViewController.swift */; };
 		0C820FD121EA88AC000E8034 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C820FD021EA88AC000E8034 /* SecondViewController.swift */; };
@@ -23,9 +25,24 @@
 		56354C8323DF04FFD20D55C2 /* Pods_Cozcuk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5EE213D7B48C43279421D6 /* Pods_Cozcuk.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0C80F2942270422200EB6A8E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C80F2932270422200EB6A8E /* EasyHTTP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0C0D338C21F7257000C44FDD /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
 		0C43DA5B21F8565F00E31B44 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C80F2912270422200EB6A8E /* EasyHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C80F2952270438E00EB6A8E /* CozcukHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CozcukHTTP.swift; sourceTree = "<group>"; };
 		0C820FC921EA88AC000E8034 /* Cozcuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cozcuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C820FCC21EA88AC000E8034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C820FCE21EA88AC000E8034 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C80F2922270422200EB6A8E /* EasyHTTP.framework in Frameworks */,
 				56354C8323DF04FFD20D55C2 /* Pods_Cozcuk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +77,7 @@
 		0C820FC021EA88AC000E8034 = {
 			isa = PBXGroup;
 			children = (
+				0C80F2912270422200EB6A8E /* EasyHTTP.framework */,
 				0CFCD40521F9E27D0070D9A9 /* readme.md */,
 				0C43DA5B21F8565F00E31B44 /* Podfile */,
 				0C820FCB21EA88AC000E8034 /* Cozcuk */,
@@ -88,9 +107,9 @@
 				0C820FD721EA88AE000E8034 /* LaunchScreen.storyboard */,
 				0C820FDA21EA88AE000E8034 /* Info.plist */,
 				0CDFD57E21F03DFB00AAC38D /* Configuration.swift */,
-				0C0D338C21F7257000C44FDD /* Http.swift */,
 				0CBC930E21F8369200B7118E /* User.swift */,
 				0CCE499521F8497900F8804E /* Gui.swift */,
+				0C80F2952270438E00EB6A8E /* CozcukHTTP.swift */,
 			);
 			path = Cozcuk;
 			sourceTree = "<group>";
@@ -124,6 +143,7 @@
 				0C820FC621EA88AC000E8034 /* Frameworks */,
 				0C820FC721EA88AC000E8034 /* Resources */,
 				57BA7E4B199843F395B5D9C3 /* [CP] Embed Pods Frameworks */,
+				0C80F2942270422200EB6A8E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,10 +268,10 @@
 			files = (
 				0C820FD121EA88AC000E8034 /* SecondViewController.swift in Sources */,
 				0CCE499621F8497900F8804E /* Gui.swift in Sources */,
+				0C80F2962270438E00EB6A8E /* CozcukHTTP.swift in Sources */,
 				0C820FCD21EA88AC000E8034 /* AppDelegate.swift in Sources */,
 				0CDFD57F21F03DFB00AAC38D /* Configuration.swift in Sources */,
 				0C820FCF21EA88AC000E8034 /* FirstViewController.swift in Sources */,
-				0C0D338D21F7257000C44FDD /* Http.swift in Sources */,
 				0CF20B4721F78ACA00548E4A /* ForgotPassword.swift in Sources */,
 				0CBC930F21F8369200B7118E /* User.swift in Sources */,
 			);
@@ -399,7 +419,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6405EF31AE27D7FF32F34E72 /* Pods-Cozcuk.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25T695DT32;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -407,6 +426,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Cozcuk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +442,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCB74CE62CCF5E3311D5447C /* Pods-Cozcuk.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25T695DT32;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -430,6 +449,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Cozcuk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

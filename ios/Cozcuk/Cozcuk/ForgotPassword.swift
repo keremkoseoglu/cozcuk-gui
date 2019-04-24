@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyHTTP
 
 class ForgotPassword: UIViewController, HttpClient {
 	

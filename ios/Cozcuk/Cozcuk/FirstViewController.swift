@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyHTTP
 
 class FirstViewController: UIViewController, HttpClient {
 

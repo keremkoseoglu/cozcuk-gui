@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyHTTP
 
 class User: UIViewController, HttpClient {
 
